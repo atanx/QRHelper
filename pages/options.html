@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head><title>My Test Extension Options</title>
+
+<head>
+    <title>My Test Extension Options</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <script type="text/javascript" src="../vendor/jquery/jquery.js"></script>
 <script type="text/javascript" src="../vendor/jquery/jquery.qrcode.js"></script>
 <script type="text/javascript" src="../js/options.js"></script>
 <style>
-    body{
-        width:400px;
+    body {
+        width: 400px;
     }
-    .history{
-        width:200px;
+
+    .history {
+        width: 200px;
     }
-    #tips{
+
+    #tips {
         margin: 30px 0px 10px 0px;
         color: #888;
     }
 
-    .text-center{
+    .text-center {
         text-align: center;
     }
 
-    #url{
+    #url {
         background: #eee;
         padding: 5px;
         margin-top: 10px;
@@ -30,15 +34,24 @@
         word-break: break-all;
     }
 </style>
+
 <body>
-<div>
-    <select id="historyUrls" class="history"></select>
-    <button id="removeBtn">移除选中链接</button>
-    <button id="openTabBtn">打开工具</button>
-</div>
-<div id="tips" class="text-center"></div>
-<div id="qrcode" class="text-center"></div>
-<div id="url" class=""></div>
-<br>
+    <div>
+        <!--         
+        <select id="historyUrls" class="history"></select>
+        <button id="removeBtn">移除选中链接</button>
+        <button id="openTabBtn">打开工具</button>
+         -->
+
+        <select id="historyUrls" class="history"></select>
+        <button id="removeUrl">移除</button>
+        <button id="openUrl">打开</button>
+        <button id="openTabBtn">...</button>
+    </div>
+    <div id="tips" class="text-center"></div>
+    <div id="qrcode" class="text-center"></div>
+    <div id="url" class=""></div>
+    <br>
 </body>
+
 </html>
